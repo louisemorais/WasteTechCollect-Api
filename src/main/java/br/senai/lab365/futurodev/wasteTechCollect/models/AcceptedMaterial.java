@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "AcceptedMaterials")
+@Table(name = "Accepted_materials")
 @Getter
 @Setter
 public class AcceptedMaterial {
@@ -16,12 +16,12 @@ public class AcceptedMaterial {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "CollectionPoints_id", nullable = false)
-    private CollectionPoint collectionPoints;
+    @JoinColumn(name = "Collection_Points_id", nullable = false)
+    private CollectionPoint collectionPoint;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "EletronicWastes_id", nullable = false)
-    private ElectronicWaste eletronicWastets;
+    @JoinColumn(name = "Electronic_wastes_id", nullable = false)
+    private ElectronicWaste electronicWaste;
 
     @Column(name = "Max_Capacity", nullable = false)
     private BigDecimal maxCapacity;

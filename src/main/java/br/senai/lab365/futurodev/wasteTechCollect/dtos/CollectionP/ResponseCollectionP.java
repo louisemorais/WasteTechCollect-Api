@@ -7,6 +7,6 @@ import java.util.List;
 
 public record ResponseCollectionP(Long id,
                                   String name,
-                                  String adress,
+                                  String address,
                                   LocalDate collectionDay,
                                   List<AcceptedMaterial> materials) { }

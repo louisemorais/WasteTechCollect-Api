@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "CollectionPoints")
+@Table(name = "Collection_points")
 @Getter
 @Setter
 public class CollectionPoint {
@@ -19,14 +19,13 @@ public class CollectionPoint {
     @Column(name = "Name", length = 255, nullable = false )
     private String name;
 
-    @Column(name = "Adress", nullable = false )
-    private String adress;
+    @Column(name = "Address", nullable = false )
+    private String address;
 
-    @Column(name = "CollectionDay", nullable = false)
+    @Column(name = "Collection_day", nullable = false)
     private LocalDate collectionDay;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "CollectionPoint", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "AcceptedMaterial_id", nullable = false)
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "collectionPoint", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<AcceptedMaterial> materials=new ArrayList<>();
 
 }

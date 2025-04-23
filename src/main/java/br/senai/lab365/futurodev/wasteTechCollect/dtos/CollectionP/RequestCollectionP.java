@@ -6,6 +6,6 @@ import java.time.LocalDate;
 import java.util.List;
 
 public record RequestCollectionP(String name,
-                                 String adress,
+                                 String address,
                                  LocalDate collectionDay,
                                  List<RequestAcceptedM> materials) { }
