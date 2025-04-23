@@ -1,4 +1,4 @@
-package br.senai.lab365.futurodev.wasteTechCollect.Repositories;
+package br.senai.lab365.futurodev.wasteTechCollect.repositories;
 
 import br.senai.lab365.futurodev.wasteTechCollect.models.ElectronicWaste;
 import org.springframework.data.jpa.repository.JpaRepository;
