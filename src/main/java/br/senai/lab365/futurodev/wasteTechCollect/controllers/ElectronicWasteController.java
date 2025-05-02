@@ -2,13 +2,13 @@ package br.senai.lab365.futurodev.wasteTechCollect.controllers;
 
 import br.senai.lab365.futurodev.wasteTechCollect.dtos.ElectronicW.RequestElectW;
 import br.senai.lab365.futurodev.wasteTechCollect.dtos.ElectronicW.ResponseElectW;
-import br.senai.lab365.futurodev.wasteTechCollect.services.ElectronicWasteServices;
+import br.senai.lab365.futurodev.wasteTechCollect.services.EletronicWaste.ElectronicWasteServices;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("electronic-wastes")
+@RequestMapping("electronicWastes")
 @RestController
 @RequiredArgsConstructor
 public class ElectronicWasteController {

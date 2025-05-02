@@ -1,4 +1,4 @@
-package br.senai.lab365.futurodev.wasteTechCollect.services;
+package br.senai.lab365.futurodev.wasteTechCollect.services.EletronicWaste;
 
 import br.senai.lab365.futurodev.wasteTechCollect.dtos.ElectronicW.RequestElectW;
 import br.senai.lab365.futurodev.wasteTechCollect.dtos.ElectronicW.ResponseElectW;

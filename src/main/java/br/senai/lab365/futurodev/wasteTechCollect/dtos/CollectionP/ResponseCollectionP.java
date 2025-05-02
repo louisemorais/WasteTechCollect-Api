@@ -1,5 +1,6 @@
 package br.senai.lab365.futurodev.wasteTechCollect.dtos.CollectionP;
 
+import br.senai.lab365.futurodev.wasteTechCollect.dtos.AcceptedM.ResponseAcceptedM;
 import br.senai.lab365.futurodev.wasteTechCollect.models.AcceptedMaterial;
 
 import java.time.LocalDate;
@@ -9,4 +10,4 @@ public record ResponseCollectionP(Long id,
                                   String name,
                                   String address,
                                   LocalDate collectionDay,
-                                  List<AcceptedMaterial> materials) { }
+                                  List<ResponseAcceptedM> materials) { }

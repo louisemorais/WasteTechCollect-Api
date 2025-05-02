@@ -15,11 +15,11 @@ public class AcceptedMaterial {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Collection_Points_id", nullable = false)
     private CollectionPoint collectionPoint;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "Electronic_wastes_id", nullable = false)
     private ElectronicWaste electronicWaste;
 

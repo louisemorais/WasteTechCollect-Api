@@ -1,5 +1,7 @@
 package br.senai.lab365.futurodev.wasteTechCollect.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,7 +27,7 @@ public class CollectionPoint {
     @Column(name = "Collection_day", nullable = false)
     private LocalDate collectionDay;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "collectionPoint", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "collectionPoint", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<AcceptedMaterial> materials=new ArrayList<>();
 
 }
