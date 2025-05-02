@@ -30,7 +30,7 @@ public class CollectionPointService implements CollectionPointServicesInterf {
 
     @Override
     public List<ResponseCollectionP> findByName(String name) {
-        List<CollectionPoint> collectionPointss=collectionPointRepository.findByName(name);
+        List<CollectionPoint> collectionPointss=collectionPointRepository.findByNameWaste(name);
         return CollectionPointMapper.toResponseDtos(collectionPointss);
     }
     @Override

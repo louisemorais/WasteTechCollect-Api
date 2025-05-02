@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("collectionPoint")
+@RequestMapping("collectionPoints")
 @RestController
 @RequiredArgsConstructor
 public class CollectionPointController {
@@ -33,7 +33,7 @@ public class CollectionPointController {
         return service.findById(id);
     }
 
-    @GetMapping("/electronicwaste/name/{name}")
+    @GetMapping("/electronicWaste/name/{name}")
     public ResponseEntity<List<ResponseCollectionP>> getByElectronicWasteName(@PathVariable String name) {
         List<ResponseCollectionP> results = service.findByName(name);
         return ResponseEntity.status(HttpStatus.OK).body(results);

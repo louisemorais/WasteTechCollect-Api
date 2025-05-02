@@ -10,7 +10,7 @@ import java.util.List;
 public interface CollectionPointRepository extends JpaRepository<CollectionPoint, Long> {
     @Query("SELECT DISTINCT cp.collectionPoint FROM AcceptedMaterial cp " +
             "WHERE UPPER(cp.electronicWaste.wasteType) LIKE CONCAT('%', UPPER(:name) , '%')")
-    List<CollectionPoint> findByName(@Param("name") String name);
+    List<CollectionPoint> findByNameWaste(@Param("name") String name);
 
 
 }
